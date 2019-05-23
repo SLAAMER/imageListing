@@ -1,9 +1,35 @@
 <template>
   <div class="home">
-    <h1 style="display-2">HOME PAGE</h1>
+    <v-container fluid class="pt-0 px-0">
+      <v-carousel flat hide-delimiters>
+        <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src"></v-carousel-item>
+      </v-carousel>
+      <v-layout>
+
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return {
+      items:[
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+        }
+      ]
+    }
+  }
+};
 </script>
