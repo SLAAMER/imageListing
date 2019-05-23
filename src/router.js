@@ -29,6 +29,11 @@ export default new Router({
       path: '/gallery',
       name: 'gallery',
       component:Gallery
+    },
+    {
+      path: '/singleImage',
+      name: 'singleImage',
+      component: () => import('./views/SingleImage.vue')
     }
   ]
 })

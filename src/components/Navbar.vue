@@ -35,6 +35,7 @@ export default {
       links: [
         { icon: "dashboard", text: "Home", route: "/" },
         { icon: "collections", text: "Gallery", route: "/gallery" },
+        { icon: "image", text: "Single Image", route: "/singleImage" },
         { icon: "account_circle", text: "Account", route: "/account" }
       ]
     };
