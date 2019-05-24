@@ -6,8 +6,8 @@
           <h1 class="display-2 font-weight-medium">Gallery</h1>
         </v-layout>
       </v-parallax>
-      <v-layout row wrap>
-        <v-flex xs12 sm6 md4 lg4  v-for="i in images" :key="i.id" d-flex @click="parImgSrc = i.download_url">
+      <v-layout row wrap class="px-5 mx-5" >
+        <v-flex xs12 sm12 md12 lg12  v-for="i in images" :key="i.id" d-flex @click="parImgSrc = i.download_url">
           <v-card flat tile class="d-flex">
             <v-img :src="i.download_url">
 
