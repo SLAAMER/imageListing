@@ -12,7 +12,7 @@
       </v-btn>
     </v-toolbar>
 
-    <v-navigation-drawer v-model="drawer" app>
+    <v-navigation-drawer :temporary="drawerTemp" v-model="drawer" app>
       <v-list>
         <v-list-tile v-for="link in links" :key="link.text" router :to="link.route">
           <v-list-tile-action>
@@ -32,6 +32,7 @@ export default {
   data() {
     return {
       drawer: false,
+      drawerTemp: true,
       links: [
         { icon: "dashboard", text: "Home", route: "/" },
         { icon: "collections", text: "Gallery", route: "/gallery" },
