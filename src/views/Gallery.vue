@@ -7,7 +7,7 @@
         </v-layout>
       </v-parallax>
       <v-layout row wrap>
-        <v-flex md4 v-for="i in images" :key="i.id" d-flex @click="parImgSrc = i.download_url">
+        <v-flex xs12 sm6 md4 lg4  v-for="i in images" :key="i.id" d-flex @click="parImgSrc = i.download_url">
           <v-card flat tile class="d-flex">
             <v-img :src="i.download_url">
 
